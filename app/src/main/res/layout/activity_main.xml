@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/bt_clear_canvas"
+        android:layout_row="0"
+        android:layout_column="0"
+        android:text="CLEAR" />
+
+    <Button
+        android:id="@+id/bt_predict"
+        android:layout_row="0"
+        android:layout_column="1"
+        android:text="PREDICT" />
+
+    <android.support.v7.widget.CardView
+        android:layout_row="1"
+        android:layout_column="0"
+        android:layout_columnSpan="2"
+        android:padding="5dp">
+
+        <com.example.kotlindrawing.DrawView
+            android:id="@+id/dv_canvas"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </android.support.v7.widget.CardView>
+
+</GridLayout>
